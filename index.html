@@ -21,8 +21,8 @@
         </div>
         <div class="nav-right">
             <button class="btn btn-sm btn-link">Docs</button>
-            <button class="btn btn-sm">Login</button>
-            <button class="btn btn-sm btn-black">Get Started</button>
+            <button class="btn btn-sm" onclick="openLoginPage()">Login</button>
+            <button class="btn btn-sm btn-black" onclick="openRegisterPage()">Get Started</button>
         </div>
         <div class="mobile-menu" onClick="openMenu()" id="open-btn">
             <img src="./icons/hamburger.svg"/>
@@ -47,7 +47,7 @@
                 dependencies, and structure, then safely adapts them to new projects.
             </h3>
             <div class="HeroBtn">
-                <button class="btn btn-black">Get Started</button>
+                <button class="btn btn-black" onclick="openRegisterPage()">Get Started</button>
                 <button class="btn" onclick="bookDemo()">Get a Demo</button>
             </div>
         </div>
@@ -201,7 +201,7 @@
                         Start building today, or talk to us about advanced use cases.
                     </p>
                     <div class="GetStarted">
-                        <button class="btn btn-sm btn-black">Get Started</button>
+                        <button class="btn btn-sm btn-black" onclick="openRegisterPage()">Get Started</button>
                         <button class="btn btn-sm" onclick="bookDemo()">Get a Demo</button>
                     </div>
                 </div>
