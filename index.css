@@ -333,6 +333,14 @@ button{
     padding: 5px;
 } */
 
+.cli-body{
+    padding: 0px 15px;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    gap:3px;
+}
+
 .from{
     color:#855A6D;
 }
