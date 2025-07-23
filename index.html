@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpeedBuild</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navBar">
+        <div class="nav-logo">_> sb</div>
+        <div class="nav-center-container">
+            <div class="nav-center">
+                <div class="nav-item">Features</div>
+                <div class="nav-item">Frameworks</div>
+                <div class="nav-item">SpeedBuild Cloud</div>
+            </div>
+        </div>
+        <div class="nav-right">
+            <button class="btn btn-sm btn-link">Docs</button>
+            <button class="btn btn-sm">Login</button>
+            <button class="btn btn-sm btn-black">Get Started</button>
+        </div>
+        <div class="mobile-menu" onClick="openMenu()" id="open-btn">
+            <img src="./icons/hamburger.svg"/>
+        </div>
+        <div class="mobile-menu" onClick="closeMenu()" id="close-btn">
+            <img src="./icons/close.svg"/>
+        </div>
+    </div>
+    
+    <div class="HeroSection cosmic-grid">
+        <div></div>
+        <div class="heroMain">
+            <div class="oss-marker">
+                <div class="github-logo"><img src="./icons/github.svg"/></div>
+                <div class="oss-text">We are open source. Star us on Github. </div>
+            </div>
+            <h1>AI Can Generate Code.</h1>
+            <h1>SpeedBuild Gives You Code That Works.</h1>
+            <!-- AI Reliability and Architecture Infrastructure layer for Coding. -->
+            <h3 class="heroSubtitle">
+                Extract real, production-ready features, complete with configs, 
+                dependencies, and structure, then safely adapts them to new projects.
+            </h3>
+            <div class="HeroBtn">
+                <button class="btn btn-black">Get Started</button>
+                <button class="btn" onclick="bookDemo()">Get a Demo</button>
+            </div>
+        </div>
+
+        <div class="Trailer">
+            <p>_> <span class="strong">EXTRACT</span></p>
+            <p class="border">_> <span class="strong">ADAPT</span></p>
+            <p class="border">_> <span class="strong">DEPLOY</span></p>
+        </div>
+    </div>
+    <div class="featuresSection">
+        <div class="features">
+            <div class="extract-container">
+                <div class="Extract">
+                    <div class="extractDemoCLI demoBox double-margin">
+                        <div class="terminal-top">
+                            <div class="dot-container">
+                                <div class="terminal-dot"></div>
+                                <div class="terminal-dot"></div>
+                                <div class="terminal-dot"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="extractDemoCode demoBox">
+                        <div class="terminal-top">
+                            <div class="dot-container">
+                                <div class="terminal-dot red-dot"></div>
+                                <div class="terminal-dot blue-dot"></div>
+                                <div class="terminal-dot green-dot"></div>
+                            </div>
+                            <div class="termial-head">code</div>
+                            <div></div>
+                        </div>
+                        <div class="terminal-body">
+                            <div class="terminal-body-inner">
+                                <div class="terminal-left">
+                                    <div class="workflow">Untitled</div>
+                                    <div class="workflow-body">
+                                        <ul>
+                                            <div class="py-file">
+                                                <div class="py-logo">
+                                                    <img src="./icons/python.svg"/>
+                                                </div>
+                                                <p>urls.py</p>
+                                            </div>
+                                            <div class="py-file active-file">
+                                                <div class="py-logo">
+                                                    <img src="./icons/python.svg"/>
+                                                </div>
+                                                <p>views.py</p>
+                                            </div>
+                                            <div class="py-file">
+                                                <div class="py-logo">
+                                                    <img src="./icons/python.svg"/>
+                                                </div>
+                                                <p>models.py</p>
+                                            </div>
+                                            <div class="py-file">
+                                                <div class="py-logo">
+                                                    <img src="./icons/python.svg"/>
+                                                </div>
+                                                <p>settings.py</p>
+                                            </div>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="terminal-right">
+                                    <div><span class="from">from</span> <span class="class-style">django.contrib.auth.models</span> <span class="from">import</span> <span class="class-style">User</span></div>
+                                    <div><span class="from">from</span> <span class="class-style">django.contrib.auth</span> <span class="from">import</span> <span class="def">authenticate</span></div>
+                                
+                                    <div class="editor-top"><span class="def-type">class</span> <span class="class-style">LoginView</span><span class="bracket">(</span><span class="class-style">APIView</span><span class="bracket">)</span>:</div>
+                                    <div class="indent-1 editor-top-2"><span class="def-type">def</span> <span class="def">post</span><span class="bracket">(</span><span class="param">self</span>, <span class="param">request</span><span class="bracket">)</span>:</div>
+                                    <div class="indent-2"><span class="param">email</span> = <span class="param">request</span>.data.get<span class="bracket">(</span><span class="str">'username'<span class="bracket">)</span></div>
+                                    <div class="indent-2"><span class="param">password</span> = <span class="param">request</span>.data.get<span class="bracket">(</span><span class="str">'password'</span><span class="bracket">)</span></div>
+                                    <div class="indent-2"><span class="param">user</span> = <span class="def">authenticate</span><span class="bracket">(</span><span class="param">request</span>, <span class="param">username</span>=<span class="param">email</span>, <span class="param">password</span>=<span class="param">password</span><span class="bracket">)</span></div>
+                                    <div class="indent-2 editor-top-2"><span class="from">if</span> <span class="param">user</span> is not None:</div>
+                                    <div class="indent-3"><span class="param">refresh</span> = <span class="class-style">RefreshToken</span>.<span class="def">for_user</span><span class="bracket">(</span><span class="param">user</span><span class="bracket">)</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="extract-info">
+                    <h3>
+                        Extract complete features logic, configs, middleware, dependencies.
+                        No copy-paste. No missing pieces.
+                    </h3>
+                </div>
+            </div>
+            <div class="deploy">
+                <div class="deploy-left">
+                    <h3>
+                        Drop in production-ready features with a single command.
+                        Tested, structured, and ready to ship.
+                    </h3>
+
+                    <div class="prompt-container">
+                        <div class="prompt-subtitle">Adapt features to new projects using plain English.</div>
+                        
+                        <div class="prompt">
+                        >_ Register all models to the admin panel
+                        </div>
+
+                        <div class="prompt-subtitle">SpeedBuild handles the wiring, safely and intelligently.</div>
+                    </div>
+                </div>
+                <div class="deploy-right">
+                    <div class="deploy-terminal">
+                        <div class="terminal-top">
+                            <div class="dot-container">
+                                <div class="terminal-dot"></div>
+                                <div class="terminal-dot"></div>
+                                <div class="terminal-dot"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="beta">
+                <div class="beta-inner">
+                    <h3>Reuse what already works, without breaking architecture or security.</h3>
+                    <p class="prompt-subtitle">Starting with Django, Flask, FastAPI, and Beyond</p>
+                </div>
+                <div class="beta-inner beta-right">
+                    <h3>SpeedBuild cloud (Coming Soon)</h3>
+                    <p class="prompt-subtitle">Create public or private templates, share across teams, and use AI-powered semantic search to find the perfect feature.</p>
+                </div>
+            </div>
+            <div class="deploy gap">
+            </div>
+            <div class="getStartedContainer">
+                <div>
+                    <h3>
+                        Start Reusing Production-Ready Code.
+                    </h3>
+                    <p class="prompt-subtitle">
+                        SpeedBuild is free, open source, and ready to ship.
+                        Start building today, or talk to us about advanced use cases.
+                    </p>
+                    <div class="GetStarted">
+                        <button class="btn btn-sm btn-black">Get Started</button>
+                        <button class="btn btn-sm" onclick="bookDemo()">Get a Demo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="prompt-subtitle footer-right ">© 2025 SpeedBuild. All rights reserved.</div>
+            <div class="socials">
+                <div class="social-container">
+                    <img src="./icons/github-plain.svg"/>
+                </div>
+                <div class="social-container">
+                    <img src="./icons/x.svg"/>
+                </div>
+                <div class="social-container">
+                    <img src="./icons/linkedin.svg"/>
+                </div>
+                <div class="social-container">
+                    <img src="./icons/email.svg"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Menu -->
+     <div class="mobile-menu-body" id="mobile-menu">
+        <div class="mobile-menu-item">Features</div>
+        <div class="mobile-menu-item">Frameworks</div>
+        <div class="mobile-menu-item">SpeedBuild Cloud</div>
+        <div class="mobile-menu-item">Documentation</div>
+        <div class="mobile-menu-item">Login</div>
+        <div class="mobile-menu-item">Get Started</div>
+     </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
