@@ -2,7 +2,7 @@ const menu = document.getElementById('mobile-menu')
 const openBtn = document.getElementById("open-btn")
 const closeBtn = document.getElementById("close-btn")
 
-const appAddress = "https://speedbuild-app.vercel.app/"
+const appAddress = "https://app.speedbuild.dev/"
 
 const bookDemo = () => {
     window.open('https://calendly.com/kbdemo1/30min', '_blank');
