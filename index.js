@@ -4,6 +4,12 @@ const closeBtn = document.getElementById("close-btn")
 
 const appAddress = "https://app.speedbuild.dev/"
 
+const gitAddress = "https://github.com/EmmanuelAttah1/speedbuild"
+
+const openGithub=()=>{
+    window.open(gitAddress, '_blank');
+}
+
 const bookDemo = () => {
     window.open('https://calendly.com/kbdemo1/30min', '_blank');
 }
