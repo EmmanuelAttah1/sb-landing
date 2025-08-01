@@ -10,6 +10,10 @@ const openGithub=()=>{
     window.open(gitAddress, '_blank');
 }
 
+const openLinkedin=()=>{
+    window.open("http://linkedin.com/company/speedbuild","_blank");
+}
+
 const bookDemo = () => {
     window.open('https://calendly.com/kbdemo1/30min', '_blank');
 }
